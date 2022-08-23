@@ -5,15 +5,39 @@
         <title>INW - SITE 001</title>
         <style>
             table, th, td {
-            border: 1px solid white;
+            border: 2px solid white;
             border-collapse: collapse;
+            border-radius: 5px;
             }
+            input, select,textarea {
+            background-color: #665038;
+            color: white;
+            border-color:white;
+            border-style:ridge;
+            border-radius: 5px;
+            }
+            p { 
+            font-size: 14px;
+            }
+            input:hover {
+            background-color:white;
+            color:#665038;
+            border-color: black;
+            transition: 0.2s;
+            }
+            input:active {
+            background-color:black;
+            color:#665038;
+            border-color: white;
+            transition: 0.2s;
+            }
+            
         </style>
     </head>
-    <body style="background-color: #7f6f5f; text-align:center; color:white;font-family:Arial, Helvetica, sans-serif">
+    <body style="background-color: #7f6f5f; text-align:center; color:white;font-family:Arial, Helvetica, sans-serif;">
         <h1>SITE 001 - INW</h1>
         <i>Site desenvolvido para as aulas de INW</i>
-        <p><b><a href="https://scl.ifsp.edu.br" target="_blank">IFSP São Carlos</a></b></p>
+        <p><b><a href="https://scl.ifsp.edu.br" target="_blank" style="color:white">Site - IFSP São Carlos</a></b></p>
         <p>
             <table style="width: 75%; margin:auto;">
                 <caption>Tabela de coisas importantes</caption>
@@ -57,7 +81,7 @@
                     <td><img src="img/café.jpg" height="100" alt="Galo servindo café e oferecendo: 'aceita café?'"></td>
                 </tr>
                 <tr>
-                    <td>Café</td>
+                    <td>Buraco Negro</td>
                     <td><ul style="text-align:left">
                         <li>Distorção gravitacional do espaço tempo</li>
                         <li>Elemento tão massivo capaz de gerar gravidade </br>
@@ -72,5 +96,29 @@
                 </tr>
             </table>
         </p>
+        <table style="margin:auto; width: 50%; height:fit-content">
+            <td>
+            <form>
+                <label for="pNome">codenome</label>
+                <input type="text" id="pNome" name="pNome"><br>
+                <label for="pwd">password</label>
+                <input type="password" id="pwd" name="pwd"><br>
+                <input type="radio" id="cbuilder" name="pref" value="pernalonga">
+                <label for="pernalonga">Pernalonga</label>
+                <input type="radio" id="reigen" name="pref" value="reigen">
+                <label for="reigen">Reigen</label><br>
+                <label for="cursos">escolha</label>
+                <select id="cursos">
+                <option value="buraconegro">buraco negro</option>
+                <option value="café">café</option>
+                <option value="ambos">ambos</option>
+                </select><br>
+                <textarea name="opiniao" rows="3" cols="40" style="font-family:Arial, Helvetica, sans-serif">digite sua avaliação para esse site (não tem como eu ler por enquanto)</textarea><br>
+                <input type="reset" value="apagar tudo">
+                <input type="button" value="pode clicar, não faz nada"><br>
+                <br><input type="submit" value="enviar (não funciona também, só da f5 na página)">
+            </form>
+            </td>
+        </table>
     </body>
 </html>
