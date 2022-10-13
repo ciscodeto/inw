@@ -1,0 +1,98 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #090b10;
+    color:#6e9395;
+}
+
+header {
+    background-color: hsl(229, 27%, 10%);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+article {
+    background-color: hsl(229, 27%, 10%);
+    padding: 10px;
+    margin: 10px 0.5%;
+    border-radius: 15px;
+    text-align: justify;
+}
+
+h1 {
+    color: #3c3ac4;
+    text-align: center;
+}
+
+mark {
+    text-decoration: none;
+    color:#ffc711;
+    background: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 25%;
+    text-align:center;
+}
+
+nav a {
+    transition: 0.2s;
+    padding: 10px;
+    color:#e85727;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover {
+    background-color: #0c183e;
+    padding: 10px;
+    transition: 0.2s;
+    color:aliceblue;
+}
+
+footer {
+    padding: 15px;
+    background-color: hsl(223, 28%, 10%, 25%);
+    clear:left;
+    animation: color-change 1s infinite;
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+
+@keyframes color-change {
+  0% { color: #3c3ac4; }
+  50% { color: #6e9395; }
+  100% { color: #3c3ac4; }
+}
+
+.left {
+float: left;
+width: 25%;
+}
+
+.main {
+float: left;
+width: 41%;
+color:aquamarine;
+}
+
+.main h1 {
+    color:hsl(46, 100%, 75%);
+    font-family: 'Teko', sans-serif;
+    font-size: 1.9em;
+}
+.right {
+float: left;
+width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+.left, .main, .right {
+    width: 100%;
+}
+}
